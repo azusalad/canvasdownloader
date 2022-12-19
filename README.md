@@ -18,5 +18,5 @@ Edit `mimetypes.txt` with the mime types of the files that you want to download.
 
 `python main.py`
 
-Then enter your login credentials in the selenium webdriver.  After the main Canvas page has loaded, press enter in the terminal and the program will download files to the `./downloads`.
+Then enter your login credentials in the selenium webdriver.  After the main Canvas page has loaded, press enter in the terminal and the program will download files to `./downloads`.
 
