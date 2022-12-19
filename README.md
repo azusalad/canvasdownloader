@@ -1,5 +1,5 @@
 # Canvas Downloader
-Automate the download of all module attachments from your Canvas courses.  Maybe it's the end of the year and you want to save all the notes the teacher has made.
+Webscraper that automates the download of all module attachments from your Canvas courses.
 
 ## Requirements
 Python, selenium, tqdm, geckodriver, unix system.
