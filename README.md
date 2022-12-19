@@ -20,3 +20,34 @@ Edit `mimetypes.txt` with the mime types of the files that you want to download.
 
 Then enter your login credentials in the selenium webdriver.  After the main Canvas page has loaded, press enter in the terminal and the program will download files to `./downloads`.
 
+## Example tree output
+```
+downloads
+├── 123456
+│   ├── lecture10.pdf
+│   ├── lecture11.pdf
+│   ├── lecture12.pdf
+│   ├── lecture13.pdf
+│   ├── lecture14.pdf
+│   ├── lecture15.pdf
+│   ├── lecture1.pdf
+│   ├── lecture2.pdf
+│   ├── lecture3.pdf
+│   ├── lecture4.pdf
+│   ├── lecture5.pdf
+│   ├── lecture6.pdf
+│   ├── lecture7.pdf
+│   ├── lecture8.pdf
+│   ├── lecture9.pdf
+│   ├── practice_review.pdf
+│   └── practice_review_solutions.pdf
+├── 234567
+│   ├── lecture1.pdf
+│   ├── lecture2.pdf
+│   ├── lecture3.pdf
+│   └── lecture4.pdf
+├── geckodriver.log
+├── log.txt
+└── symlink -> 234567
+```
+
