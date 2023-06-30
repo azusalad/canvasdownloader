@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.firefox.service import Service
 import time
 import os
 from tqdm import tqdm
@@ -26,7 +27,8 @@ def create_driver(download_dir):
     options.set_preference("pdfjs.disabled",True)
     options.headless = False
     print('creating driver')
-    driver = webdriver.Firefox(options=options, executable_path=gecko_path)
+    service = Service(executable_path=gecko_path)
+    driver = webdriver.Firefox(options=options, service=service)
     try:
         driver.install_addon(os.path.join(os.getcwd(), ublock_path), temporary=True)
     except:
